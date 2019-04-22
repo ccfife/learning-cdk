@@ -6,9 +6,12 @@ export class LearningGitStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    // The code that defines your stack goes here
-    new s3.Bucket(this,'bucket',{
+    const bucket = new s3.Bucket(this,'bucket',{
       encryption: s3.BucketEncryption.Kms
     });
+
+       //to access low-level cfn resources
+       const bucketResource = bucket.node.findChild('Resource') as s3.CfnBucket;
+       bucketResource.options.metadata = {createdByHighLevelAbsraction: 'True'};
   }
 }
