@@ -10,6 +10,9 @@ export class LearningGitStack extends cdk.Stack {
       encryption: s3.BucketEncryption.Kms
     });
 
+    bucket.grantPublicAccess();
+    bucket.addLifecycleRule({abortIncompleteMultipartUploadAfterDays: 1});
+
        //to access low-level cfn resources
        const bucketResource = bucket.node.findChild('Resource') as s3.CfnBucket;
        bucketResource.options.metadata = {createdByHighLevelAbsraction: 'False'};
