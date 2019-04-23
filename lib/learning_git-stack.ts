@@ -7,7 +7,8 @@ export class LearningGitStack extends cdk.Stack {
 
     // The code that defines your stack goes here
     const bucket = new s3.Bucket(this,'bucket',{
-      encryption: s3.BucketEncryption.Kms
+      encryption: s3.BucketEncryption.Kms,
+      bucketName: 'encrypted_bucket'
     });
 
     bucket.grantPublicAccess();
