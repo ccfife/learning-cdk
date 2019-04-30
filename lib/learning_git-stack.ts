@@ -18,15 +18,5 @@ export class LearningGitStack extends cdk.Stack {
        const bucketResource = bucket.node.findChild('Resource') as s3.CfnBucket;
        bucketResource.options.metadata = {createdByHighLevelAbsraction: 'False'};
 
-      //use addPropertyOverride method to configure resource properties not exposed in the L2 layer
-      bucketResource.addPropertyOverride('corsConfiguration', {corsRules:
-      [
-        {
-          allowedMethods: ['GET'],
-          allowedOrigins: ['*']
-        }
-      ]
-    }
-    );
   }
 }
