@@ -7,16 +7,16 @@ export class LearningGitStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-  const bucket = new s3.Bucket(this,'bucket',{
+  const bucket = new s3.Bucket(this,'staticWebsite_v1',{
       //encryption: s3.BucketEncryption.KmsManaged,
       websiteIndexDocument: 'index.html',
       websiteErrorDocument: 'about-me.html'
     });
 
-    bucket.grantPublicAccess();
+    //bucket.grantPublicAccess();
 
     new s3deploy.BucketDeployment(this, 'deployWebsite', {
-      source: s3deploy.Source.asset('./static_website/sonar-master'),
+      source: s3deploy.Source.asset('static_website/sonar-master'),
       destinationBucket: bucket,
       destinationKeyPrefix: 'web/static' 
     });
