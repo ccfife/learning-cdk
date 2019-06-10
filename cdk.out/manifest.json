@@ -1,0 +1,383 @@
+{
+  "version": "0.34.0",
+  "artifacts": {
+    "LearningGitStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://033781032552/us-west-2",
+      "properties": {
+        "templateFile": "LearningGitStack.template.json"
+      },
+      "metadata": {
+        "/LearningGitStack/staticWebsite_v1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "staticWebsitev1D351E58C",
+            "trace": [
+              "new Bucket (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:786:22)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:12:18)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/staticWebsite_v1/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "staticWebsitev1PolicyF4B9EE9E",
+            "trace": [
+              "new BucketPolicy (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:32:5)",
+              "Bucket.addToResourcePolicy (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:346:21)",
+              "Function.addToPrincipalOrResource (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/grant.ts:114:22)",
+              "Bucket.grant (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:511:27)",
+              "Bucket.grantRead (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:402:17)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:31:12)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/deployWebsite/Asset": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.3acb257de493cbb3000a11d29494543ab5e2bf264a10847ecac87446b60d6d8d",
+              "id": "LearningGitStackdeployWebsiteAssetA1409861",
+              "packaging": "zip",
+              "sourceHash": "3acb257de493cbb3000a11d29494543ab5e2bf264a10847ecac87446b60d6d8d",
+              "s3BucketParameter": "deployWebsiteAssetS3Bucket2009DF90",
+              "s3KeyParameter": "deployWebsiteAssetS3VersionKeyE76E5D9D",
+              "artifactHashParameter": "deployWebsiteAssetArtifactHashAE1DE735"
+            },
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:177:15)",
+              "Object.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:59:23)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:55:33)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/deployWebsite/Asset/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployWebsiteAssetS3Bucket2009DF90",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:136:25)",
+              "Object.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:59:23)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:55:33)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/deployWebsite/Asset/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployWebsiteAssetS3VersionKeyE76E5D9D",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:141:22)",
+              "Object.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:59:23)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:55:33)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/deployWebsite/Asset/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployWebsiteAssetArtifactHashAE1DE735",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:146:23)",
+              "Object.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:59:23)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:55:33)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/deployWebsite/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployWebsiteCustomResource762FD078",
+            "trace": [
+              "new CustomResource (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.ts:87:21)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:60:5)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/role.ts:200:18)",
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:407:31)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/policy.ts:95:22)",
+              "Role.addToPolicy (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/role.ts:234:28)",
+              "Function.addToPrincipal (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/grant.ts:130:61)",
+              "Function.addToPrincipalOrResource (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-iam/lib/grant.ts:102:26)",
+              "Import.grant (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:511:27)",
+              "Import.grantRead (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:402:17)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:57:19)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:424:22)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e7da1336032ceb9b321f04f136decbda4248cbbb760e6c39d4568be914a7a9f9.zip",
+              "id": "LearningGitStackCustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCode57070EF3",
+              "packaging": "file",
+              "sourceHash": "e7da1336032ceb9b321f04f136decbda4248cbbb760e6c39d4568be914a7a9f9",
+              "s3BucketParameter": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeS3Bucket6E5FB2B7",
+              "s3KeyParameter": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeS3VersionKey426156C0",
+              "artifactHashParameter": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeArtifactHashEF37AD24"
+            },
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:177:15)",
+              "AssetCode.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:16)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeS3Bucket6E5FB2B7",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:136:25)",
+              "AssetCode.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:16)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeS3VersionKey426156C0",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:141:22)",
+              "AssetCode.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:16)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CCodeArtifactHashEF37AD24",
+            "trace": [
+              "new Asset (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/assets/lib/asset.ts:146:23)",
+              "AssetCode.bind (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:16)",
+              "SingletonFunction.ensureLambda (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:73:12)",
+              "new SingletonFunction (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:51:32)",
+              "new BucketDeployment (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:46:21)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:17:5)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/BucketOrigin": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketOrigin",
+            "trace": [
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/cloudfront/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cloudfrontCFDistribution0FC24C70",
+            "trace": [
+              "new CloudFrontWebDistribution (/Users/ccfife/CDK Projects/LearningGit/node_modules/@aws-cdk/aws-cloudfront/lib/web_distribution.ts:673:26)",
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:36:17)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LearningGitStack/CloudFrontURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudFrontURL",
+            "trace": [
+              "new LearningGitStack (/Users/ccfife/CDK Projects/LearningGit/lib/learning_git-stack.ts:65:9)",
+              "Object.<anonymous> (/Users/ccfife/CDK Projects/LearningGit/bin/learning_git.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:774:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10)",
+              "Module.load (internal/modules/cjs/loader.js:641:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:556:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:837:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cdk": "0.34.0",
+      "@aws-cdk/cx-api": "0.34.0",
+      "@aws-cdk/aws-s3": "0.34.0",
+      "@aws-cdk/aws-events": "0.34.0",
+      "@aws-cdk/aws-iam": "0.34.0",
+      "@aws-cdk/region-info": "0.34.0",
+      "@aws-cdk/aws-kms": "0.34.0",
+      "@aws-cdk/aws-s3-deployment": "0.34.0",
+      "@aws-cdk/aws-cloudformation": "0.34.0",
+      "@aws-cdk/aws-lambda": "0.34.0",
+      "@aws-cdk/aws-cloudwatch": "0.34.0",
+      "@aws-cdk/aws-ec2": "0.34.0",
+      "@aws-cdk/aws-sqs": "0.34.0",
+      "@aws-cdk/assets": "0.34.0",
+      "@aws-cdk/aws-cloudfront": "0.34.0",
+      "jsii-runtime": "node.js/v12.3.1"
+    }
+  }
+}
