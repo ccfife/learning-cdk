@@ -46,7 +46,7 @@ export class LearningGitStack extends cdk.Stack {
                 cloudfront.CloudFrontAllowedMethods.GET_HEAD_OPTIONS
             }
           ],
-          originPath: 'web/static',
+          originPath: '/web',
           s3OriginSource: {
             s3BucketSource: bucket,
             originAccessIdentityId: origin.cloudFrontOriginAccessIdentityId
